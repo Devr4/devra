@@ -9,7 +9,29 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
-import { Globe } from "lucide-react"
+
+const localeFlags: Record<Locale, string> = {
+  en: "GB",
+  it: "IT",
+  de: "DE",
+  es: "ES",
+  fr: "FR",
+  pt: "PT",
+}
+
+function Flag({ countryCode, className }: { countryCode: string; className?: string }) {
+  return (
+    <img
+      src={`https://flagcdn.com/w40/${countryCode.toLowerCase()}.png`}
+      srcSet={`https://flagcdn.com/w80/${countryCode.toLowerCase()}.png 2x`}
+      width="20"
+      height="15"
+      alt={countryCode}
+      className={className}
+      style={{ objectFit: "cover", borderRadius: 2 }}
+    />
+  )
+}
 
 const locales: Locale[] = ["en", "it", "de", "es", "fr", "pt"]
 
@@ -24,7 +46,7 @@ export function LanguageSwitcher() {
           size="sm"
           className="gap-2 text-muted-foreground hover:text-foreground hover:bg-muted"
         >
-          <Globe className="h-4 w-4" />
+          <Flag countryCode={localeFlags[locale]} />
           <span className="hidden sm:inline uppercase">{locale}</span>
         </Button>
       </DropdownMenuTrigger>
@@ -33,12 +55,13 @@ export function LanguageSwitcher() {
           <DropdownMenuItem
             key={loc}
             onClick={() => setLocale(loc)}
-            className={`cursor-pointer ${
+            className={`cursor-pointer gap-3 ${
               locale === loc ? "text-devra-gold" : "text-foreground"
             }`}
           >
-            <span className="uppercase mr-2 text-xs font-mono opacity-60">{loc}</span>
-            {localeNames[loc]}
+            <Flag countryCode={localeFlags[loc]} />
+            <span className="flex-1">{localeNames[loc]}</span>
+            <span className="uppercase text-xs font-mono opacity-60">{loc}</span>
           </DropdownMenuItem>
         ))}
       </DropdownMenuContent>
