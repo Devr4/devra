@@ -1,8 +1,13 @@
+"use client"
+
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Calendar, MessageSquare } from "lucide-react"
 import { DevraLogo } from "./devra-logo"
+import { useI18n } from "@/lib/i18n/context"
 
 export function CTASection() {
+  const { t } = useI18n()
+
   return (
     <section id="book-call" className="relative py-24 md:py-32 overflow-hidden">
       {/* Background Effects */}
@@ -16,7 +21,7 @@ export function CTASection() {
         <div className="bg-card border border-border rounded-3xl p-8 md:p-12 lg:p-16 text-center relative overflow-hidden">
           {/* Decorative gradient */}
           <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-devra-purple via-devra-gold to-devra-purple" />
-          
+
           {/* Logo */}
           <div className="flex justify-center mb-8">
             <DevraLogo className="w-16 h-16" />
@@ -24,27 +29,26 @@ export function CTASection() {
 
           {/* Content */}
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6 text-balance">
-            Ready to ship at sunrise speed?
+            {t.cta.title}
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 text-pretty">
-            Book a 15-minute call to discuss your project. No pitch decks, no pressure—just 
-            a focused conversation about what you want to build.
+            {t.cta.description}
           </p>
 
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Button 
+            <Button
               size="lg"
               className="bg-gradient-to-r from-devra-gold to-devra-gold-dark text-background font-semibold hover:opacity-90 transition-all shadow-xl shadow-devra-gold/25 h-14 px-8 text-base group w-full sm:w-auto"
               asChild
             >
               <a href="https://cal.com" target="_blank" rel="noopener noreferrer">
                 <Calendar className="mr-2 w-5 h-5" />
-                Book a 15-min call
+                {t.cta.ctaPrimary}
                 <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </a>
             </Button>
-            <Button 
+            <Button
               size="lg"
               variant="outline"
               className="border-border text-foreground hover:bg-muted h-14 px-8 text-base w-full sm:w-auto bg-transparent"
@@ -52,16 +56,14 @@ export function CTASection() {
             >
               <a href="mailto:hello@devra.io">
                 <MessageSquare className="mr-2 w-5 h-5 text-devra-gold" />
-                Send a message
+                {t.cta.ctaSecondary}
               </a>
             </Button>
           </div>
 
           {/* Trust indicators */}
           <div className="mt-10 pt-8 border-t border-border">
-            <p className="text-sm text-muted-foreground">
-              No commitment required. Free consultation. Fast response time.
-            </p>
+            <p className="text-sm text-muted-foreground">{t.cta.trust}</p>
           </div>
         </div>
       </div>

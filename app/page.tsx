@@ -1,3 +1,5 @@
+"use client"
+
 import { Navbar } from "@/components/navbar"
 import { HeroSection } from "@/components/hero-section"
 import { HowItWorksSection } from "@/components/how-it-works-section"
@@ -7,21 +9,24 @@ import { TestimonialsSection } from "@/components/testimonials-section"
 import { CTASection } from "@/components/cta-section"
 import { Footer } from "@/components/footer"
 import { MobileCTABar } from "@/components/mobile-cta-bar"
+import { I18nProvider } from "@/lib/i18n/context"
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-background text-foreground">
-      <Navbar />
-      <main>
-        <HeroSection />
-        <HowItWorksSection />
-        <FlashWebSection />
-        <WhyDevraSection />
-        <TestimonialsSection />
-        <CTASection />
-      </main>
-      <Footer />
-      <MobileCTABar />
-    </div>
+    <I18nProvider>
+      <div className="min-h-screen bg-background text-foreground">
+        <Navbar />
+        <main>
+          <HeroSection />
+          <HowItWorksSection />
+          <FlashWebSection />
+          <WhyDevraSection />
+          <TestimonialsSection />
+          <CTASection />
+        </main>
+        <Footer />
+        <MobileCTABar />
+      </div>
+    </I18nProvider>
   )
 }
