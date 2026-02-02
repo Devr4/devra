@@ -1,27 +1,11 @@
-import { Quote } from "lucide-react"
+"use client"
 
-const testimonials = [
-  {
-    quote: "Devra delivered our entire web platform in 5 days. What would have taken our team months was done before our next board meeting.",
-    author: "Sarah Chen",
-    role: "Founder, TechStart",
-    initial: "S",
-  },
-  {
-    quote: "The FlashWeb concept sold me immediately. Seeing my actual website before paying anything? That's confidence in your craft.",
-    author: "Marcus Rivera",
-    role: "Local Business Owner",
-    initial: "M",
-  },
-  {
-    quote: "Finally, a team that moves as fast as we do. The quality is exceptional and the communication is flawless.",
-    author: "Alex Kim",
-    role: "Agency Partner",
-    initial: "A",
-  },
-]
+import { Quote } from "lucide-react"
+import { useI18n } from "@/lib/i18n/context"
 
 export function TestimonialsSection() {
+  const { t } = useI18n()
+
   return (
     <section className="relative py-24 md:py-32 overflow-hidden">
       {/* Background */}
@@ -33,16 +17,16 @@ export function TestimonialsSection() {
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="inline-block text-sm font-semibold text-devra-gold tracking-wider uppercase mb-4">
-            Testimonials
+            {t.testimonials.badge}
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6 text-balance">
-            Trusted by builders who move fast
+            {t.testimonials.title}
           </h2>
         </div>
 
         {/* Testimonials Grid */}
         <div className="grid md:grid-cols-3 gap-6 lg:gap-8">
-          {testimonials.map((testimonial) => (
+          {t.testimonials.items.map((testimonial) => (
             <div
               key={testimonial.author}
               className="relative bg-card border border-border rounded-2xl p-6 md:p-8 hover:border-devra-gold/30 transition-all duration-300"
@@ -61,7 +45,7 @@ export function TestimonialsSection() {
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 rounded-full bg-gradient-to-br from-devra-purple to-devra-purple-light flex items-center justify-center">
                   <span className="text-sm font-semibold text-foreground">
-                    {testimonial.initial}
+                    {testimonial.author[0]}
                   </span>
                 </div>
                 <div>

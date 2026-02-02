@@ -1,20 +1,22 @@
 "use client"
 
-
 import { useState, useEffect } from "react"
 import { DevraLogo } from "./devra-logo"
 import { Button } from "@/components/ui/button"
 import { Menu, X } from "lucide-react"
-
-const navLinks = [
-  { label: "What We Build", href: "#what-we-build" },
-  { label: "FlashWeb", href: "#flashweb" },
-  { label: "Our Values", href: "#our-values" },
-]
+import { useI18n } from "@/lib/i18n/context"
+import { LanguageSwitcher } from "./language-switcher"
 
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const { t } = useI18n()
+
+  const navLinks = [
+    { label: t.nav.whatWeBuild, href: "#what-we-build" },
+    { label: t.nav.flashweb, href: "#flashweb" },
+    { label: t.nav.ourValues, href: "#our-values" },
+  ]
 
   useEffect(() => {
     const handleScroll = () => {
@@ -57,30 +59,34 @@ export function Navbar() {
 
           {/* Desktop CTA */}
           <div className="hidden md:flex items-center gap-3">
-            <Button 
-              variant="ghost" 
+            <LanguageSwitcher />
+            <Button
+              variant="ghost"
               className="text-muted-foreground hover:text-foreground hover:bg-muted"
               asChild
             >
-              <a href="#flashweb">See FlashWeb</a>
+              <a href="#flashweb">{t.nav.seeFlashWeb}</a>
             </Button>
-            <Button 
+            <Button
               className="bg-gradient-to-r from-devra-gold to-devra-gold-dark text-background font-semibold hover:opacity-90 transition-opacity shadow-lg shadow-devra-gold/20"
               asChild
             >
-              <a href="#book-call">Book a 15-min call</a>
+              <a href="#book-call">{t.nav.bookCall}</a>
             </Button>
           </div>
 
           {/* Mobile Menu Button */}
-          <button
-            type="button"
-            className="md:hidden p-2 text-foreground"
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
-          >
-            {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-          </button>
+          <div className="flex md:hidden items-center gap-2">
+            <LanguageSwitcher />
+            <button
+              type="button"
+              className="p-2 text-foreground"
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
+            >
+              {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            </button>
+          </div>
         </div>
 
         {/* Mobile Menu */}
