@@ -57,6 +57,21 @@ export function FlashWebSection() {
                 <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </a>
             </Button>
+
+            {/* The product's own site. Until now this page described FlashWeb at
+                length and linked to it nowhere: the footer entry and this
+                section's CTA are both on-page anchors, so Search Console
+                reported "Referring page: None detected" for flashweb.devra.net
+                and it was outranked on its own name by every other company
+                called FlashWeb. The anchor text carries the brand on purpose. */}
+            <p className="mt-4 text-sm">
+              <a
+                href="https://flashweb.devra.net"
+                className="text-muted-foreground underline underline-offset-4 hover:text-devra-gold transition-colors"
+              >
+                flashweb.devra.net
+              </a>
+            </p>
           </div>
 
           {/* Visual */}
