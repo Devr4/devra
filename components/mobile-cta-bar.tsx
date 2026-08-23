@@ -26,7 +26,7 @@ export function MobileCTABar() {
         className="w-full bg-gradient-to-r from-devra-gold to-devra-gold-dark text-background font-semibold hover:opacity-90 transition-all h-12 text-base group"
         asChild
       >
-        <a href="#book-call">
+        <a href="/#book-call">
           {t.mobileCta.bookCall}
           <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
         </a>

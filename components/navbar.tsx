@@ -13,9 +13,9 @@ export function Navbar() {
   const { t } = useI18n()
 
   const navLinks = [
-    { label: t.nav.whatWeBuild, href: "#what-we-build" },
-    { label: t.nav.flashweb, href: "#flashweb" },
-    { label: t.nav.ourValues, href: "#our-values" },
+    { label: t.nav.whatWeBuild, href: "/#what-we-build" },
+    { label: t.nav.flashweb, href: "/#flashweb" },
+    { label: t.nav.ourValues, href: "/#our-values" },
   ]
 
   useEffect(() => {
@@ -65,13 +65,13 @@ export function Navbar() {
               className="text-muted-foreground hover:text-foreground hover:bg-muted"
               asChild
             >
-              <a href="#flashweb">{t.nav.seeFlashWeb}</a>
+              <a href="/#flashweb">{t.nav.seeFlashWeb}</a>
             </Button>
             <Button
               className="bg-gradient-to-r from-devra-gold to-devra-gold-dark text-background font-semibold hover:opacity-90 transition-opacity shadow-lg shadow-devra-gold/20"
               asChild
             >
-              <a href="#book-call">{t.nav.bookCall}</a>
+              <a href="/#book-call">{t.nav.bookCall}</a>
             </Button>
           </div>
 
