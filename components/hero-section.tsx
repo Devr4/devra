@@ -74,20 +74,6 @@ export function HeroSection() {
             </Button>
           </div>
 
-          {/* Social Proof */}
-          <div className="mt-16 pt-12 border-t border-border/50">
-            <p className="text-sm text-muted-foreground mb-6">{t.hero.socialProof}</p>
-            <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12 opacity-60">
-              {t.hero.socialProofItems.map((item) => (
-                <div key={item} className="flex items-center gap-2">
-                  <div className="w-8 h-8 rounded-lg bg-muted flex items-center justify-center">
-                    <span className="text-xs font-bold text-muted-foreground">{item[0]}</span>
-                  </div>
-                  <span className="text-sm font-medium text-muted-foreground">{item}</span>
-                </div>
-              ))}
-            </div>
-          </div>
         </div>
       </div>
 

@@ -39,8 +39,6 @@ export const translations = {
       subheadline: "Devra builds and launches products—fast, polished, and scalable. From concept to customer-ready, we combine craft with speed so you can ship with confidence.",
       ctaPrimary: "Book a 15-min call",
       ctaSecondary: "See FlashWeb in action",
-      socialProof: "Trusted by founders and operators building fast",
-      socialProofItems: ["Startups", "Agencies", "Local Business", "Operators"],
       scroll: "Scroll",
     },
     // What We Build
@@ -82,9 +80,16 @@ export const translations = {
         "Launch in 48 hours or less",
       ],
       cta: "Get Your FlashWeb",
+      ctaSecondary: "Or book a 15-min call",
       browserUrl: "yourbusiness.com",
       badgeTitle: "Built & Ready",
       badgeSubtitle: "Pay only if you love it",
+    },
+    work: {
+      badge: "Real work",
+      title: "See what FlashWeb actually produces",
+      description: "Complete sites for real businesses, built before they committed to anything. Both are live right now, preview banner and all.",
+      linkLabel: "Visit the site",
     },
     // Our Values
     ourValues: {
@@ -118,28 +123,6 @@ export const translations = {
         },
       ],
     },
-    // Testimonials
-    testimonials: {
-      badge: "Testimonials",
-      title: "Trusted by builders who move fast",
-      items: [
-        {
-          quote: "Devra delivered our entire web platform in 5 days. What would have taken our team months was done before our next board meeting.",
-          author: "Sarah Chen",
-          role: "Founder, TechStart",
-        },
-        {
-          quote: "The FlashWeb concept sold me immediately. Seeing my actual website before paying anything? That's confidence in your craft.",
-          author: "Marcus Rivera",
-          role: "Local Business Owner",
-        },
-        {
-          quote: "Finally, a team that moves as fast as we do. The quality is exceptional and the communication is flawless.",
-          author: "Alex Kim",
-          role: "Agency Partner",
-        },
-      ],
-    },
     // CTA Section
     cta: {
       title: "Ready to ship at sunrise speed?",
@@ -154,16 +137,11 @@ export const translations = {
       copyright: "All rights reserved.",
       product: "Product",
       company: "Company",
-      legal: "Legal",
       links: {
         flashweb: "FlashWeb",
         howItWorks: "How It Works",
-        pricing: "Pricing",
         about: "About",
-        blog: "Blog",
-        careers: "Careers",
-        privacy: "Privacy",
-        terms: "Terms",
+        contact: "Contact",
       },
     },
     // Mobile CTA
@@ -187,8 +165,6 @@ export const translations = {
       subheadline: "Devra costruisce e lancia prodotti—veloci, rifiniti e scalabili. Dal concetto al cliente, combiniamo artigianalità e velocità per farti lanciare con fiducia.",
       ctaPrimary: "Prenota una chiamata",
       ctaSecondary: "Scopri FlashWeb in azione",
-      socialProof: "Scelto da fondatori e operatori che costruiscono velocemente",
-      socialProofItems: ["Startup", "Agenzie", "Attività Locali", "Operatori"],
       scroll: "Scorri",
     },
     whatWeBuild: {
@@ -228,9 +204,16 @@ export const translations = {
         "Lancio in 48 ore o meno",
       ],
       cta: "Ottieni il tuo FlashWeb",
+      ctaSecondary: "Oppure prenota una call di 15 min",
       browserUrl: "tuaazienda.com",
       badgeTitle: "Costruito e Pronto",
       badgeSubtitle: "Paga solo se ti piace",
+    },
+    work: {
+      badge: "Lavori reali",
+      title: "Guarda cosa produce davvero FlashWeb",
+      description: "Siti completi per attività reali, realizzati prima di qualsiasi impegno. Entrambi sono online adesso, banner di anteprima incluso.",
+      linkLabel: "Vai al sito",
     },
     ourValues: {
       badge: "I Nostri Valori",
@@ -263,27 +246,6 @@ export const translations = {
         },
       ],
     },
-    testimonials: {
-      badge: "Testimonianze",
-      title: "Scelto da costruttori che si muovono velocemente",
-      items: [
-        {
-          quote: "Devra ha consegnato la nostra piattaforma web in 5 giorni. Ciò che avrebbe richiesto mesi al nostro team è stato fatto prima della prossima riunione.",
-          author: "Sarah Chen",
-          role: "Fondatrice, TechStart",
-        },
-        {
-          quote: "Il concetto FlashWeb mi ha convinto subito. Vedere il mio sito prima di pagare? Questa è fiducia nel proprio mestiere.",
-          author: "Marcus Rivera",
-          role: "Imprenditore Locale",
-        },
-        {
-          quote: "Finalmente un team che si muove velocemente quanto noi. La qualità è eccezionale e la comunicazione impeccabile.",
-          author: "Alex Kim",
-          role: "Partner di Agenzia",
-        },
-      ],
-    },
     cta: {
       title: "Pronto a consegnare alla velocità dell'alba?",
       description: "Prenota una chiamata di 15 minuti per discutere il tuo progetto. Nessuna presentazione, nessuna pressione—solo una conversazione focalizzata.",
@@ -296,16 +258,11 @@ export const translations = {
       copyright: "Tutti i diritti riservati.",
       product: "Prodotto",
       company: "Azienda",
-      legal: "Legale",
       links: {
         flashweb: "FlashWeb",
         howItWorks: "Come Funziona",
-        pricing: "Prezzi",
         about: "Chi Siamo",
-        blog: "Blog",
-        careers: "Lavora con Noi",
-        privacy: "Privacy",
-        terms: "Termini",
+        contact: "Contatti",
       },
     },
     mobileCta: {
@@ -328,8 +285,6 @@ export const translations = {
       subheadline: "Devra baut und launcht Produkte—schnell, poliert und skalierbar. Vom Konzept bis zum Kunden kombinieren wir Handwerk mit Geschwindigkeit.",
       ctaPrimary: "Gespräch buchen",
       ctaSecondary: "FlashWeb in Aktion sehen",
-      socialProof: "Vertraut von Gründern und Machern, die schnell bauen",
-      socialProofItems: ["Startups", "Agenturen", "Lokale Unternehmen", "Betreiber"],
       scroll: "Scrollen",
     },
     whatWeBuild: {
@@ -369,9 +324,16 @@ export const translations = {
         "Launch in 48 Stunden oder weniger",
       ],
       cta: "Holen Sie sich FlashWeb",
+      ctaSecondary: "Oder 15-Minuten-Call buchen",
       browserUrl: "ihrunternehmen.de",
       badgeTitle: "Gebaut & Bereit",
       badgeSubtitle: "Zahlen nur bei Gefallen",
+    },
+    work: {
+      badge: "Echte Projekte",
+      title: "So sieht FlashWeb in der Praxis aus",
+      description: "Vollständige Websites für echte Unternehmen, gebaut bevor sie sich festgelegt haben. Beide sind jetzt online, inklusive Vorschau-Banner.",
+      linkLabel: "Website ansehen",
     },
     ourValues: {
       badge: "Unsere Werte",
@@ -404,27 +366,6 @@ export const translations = {
         },
       ],
     },
-    testimonials: {
-      badge: "Referenzen",
-      title: "Vertraut von Machern, die schnell handeln",
-      items: [
-        {
-          quote: "Devra hat unsere gesamte Web-Plattform in 5 Tagen geliefert. Was unser Team Monate gekostet hätte, war vor dem nächsten Meeting fertig.",
-          author: "Sarah Chen",
-          role: "Gründerin, TechStart",
-        },
-        {
-          quote: "Das FlashWeb-Konzept hat mich sofort überzeugt. Meine Website sehen, bevor ich bezahle? Das ist Vertrauen ins eigene Handwerk.",
-          author: "Marcus Rivera",
-          role: "Lokaler Unternehmer",
-        },
-        {
-          quote: "Endlich ein Team, das so schnell ist wie wir. Die Qualität ist außergewöhnlich und die Kommunikation tadellos.",
-          author: "Alex Kim",
-          role: "Agentur-Partner",
-        },
-      ],
-    },
     cta: {
       title: "Bereit, mit Sonnenaufgangs-Tempo zu liefern?",
       description: "Buchen Sie ein 15-minütiges Gespräch. Keine Pitchdecks, kein Druck—nur ein fokussiertes Gespräch über Ihr Projekt.",
@@ -437,16 +378,11 @@ export const translations = {
       copyright: "Alle Rechte vorbehalten.",
       product: "Produkt",
       company: "Unternehmen",
-      legal: "Rechtliches",
       links: {
         flashweb: "FlashWeb",
         howItWorks: "So funktioniert's",
-        pricing: "Preise",
         about: "Über uns",
-        blog: "Blog",
-        careers: "Karriere",
-        privacy: "Datenschutz",
-        terms: "AGB",
+        contact: "Kontakt",
       },
     },
     mobileCta: {
@@ -469,8 +405,6 @@ export const translations = {
       subheadline: "Devra construye y lanza productos—rápidos, pulidos y escalables. Del concepto al cliente, combinamos artesanía con velocidad para que lances con confianza.",
       ctaPrimary: "Reservar llamada",
       ctaSecondary: "Ver FlashWeb en acción",
-      socialProof: "Confiado por fundadores y operadores que construyen rápido",
-      socialProofItems: ["Startups", "Agencias", "Negocios Locales", "Operadores"],
       scroll: "Desplazar",
     },
     whatWeBuild: {
@@ -510,9 +444,16 @@ export const translations = {
         "Lanzamiento en 48 horas o menos",
       ],
       cta: "Obtén tu FlashWeb",
+      ctaSecondary: "O reserva una llamada de 15 min",
       browserUrl: "tunegocio.com",
       badgeTitle: "Construido y Listo",
       badgeSubtitle: "Paga solo si te encanta",
+    },
+    work: {
+      badge: "Trabajo real",
+      title: "Mira lo que produce FlashWeb de verdad",
+      description: "Sitios completos para negocios reales, creados antes de cualquier compromiso. Ambos están en línea ahora, con banner de vista previa incluido.",
+      linkLabel: "Ver el sitio",
     },
     ourValues: {
       badge: "Nuestros Valores",
@@ -545,27 +486,6 @@ export const translations = {
         },
       ],
     },
-    testimonials: {
-      badge: "Testimonios",
-      title: "Confiado por constructores que se mueven rápido",
-      items: [
-        {
-          quote: "Devra entregó toda nuestra plataforma web en 5 días. Lo que habría tomado meses a nuestro equipo se hizo antes de la próxima reunión.",
-          author: "Sarah Chen",
-          role: "Fundadora, TechStart",
-        },
-        {
-          quote: "El concepto FlashWeb me convenció inmediatamente. ¿Ver mi sitio web antes de pagar? Eso es confianza en tu oficio.",
-          author: "Marcus Rivera",
-          role: "Empresario Local",
-        },
-        {
-          quote: "Por fin un equipo que se mueve tan rápido como nosotros. La calidad es excepcional y la comunicación impecable.",
-          author: "Alex Kim",
-          role: "Socio de Agencia",
-        },
-      ],
-    },
     cta: {
       title: "¿Listo para entregar a velocidad del amanecer?",
       description: "Reserva una llamada de 15 minutos para discutir tu proyecto. Sin presentaciones, sin presión—solo una conversación enfocada.",
@@ -578,16 +498,11 @@ export const translations = {
       copyright: "Todos los derechos reservados.",
       product: "Producto",
       company: "Empresa",
-      legal: "Legal",
       links: {
         flashweb: "FlashWeb",
         howItWorks: "Cómo Funciona",
-        pricing: "Precios",
         about: "Nosotros",
-        blog: "Blog",
-        careers: "Carreras",
-        privacy: "Privacidad",
-        terms: "Términos",
+        contact: "Contacto",
       },
     },
     mobileCta: {
@@ -610,8 +525,6 @@ export const translations = {
       subheadline: "Devra construit et lance des produits—rapides, soignés et évolutifs. Du concept au client, nous combinons artisanat et vitesse pour que vous lanciez en confiance.",
       ctaPrimary: "Réserver un appel",
       ctaSecondary: "Voir FlashWeb en action",
-      socialProof: "Fait confiance par des fondateurs et opérateurs qui construisent vite",
-      socialProofItems: ["Startups", "Agences", "Commerces Locaux", "Opérateurs"],
       scroll: "Défiler",
     },
     whatWeBuild: {
@@ -651,9 +564,16 @@ export const translations = {
         "Lancement en 48 heures ou moins",
       ],
       cta: "Obtenez votre FlashWeb",
+      ctaSecondary: "Ou réservez un appel de 15 min",
       browserUrl: "votreentreprise.fr",
       badgeTitle: "Construit et Prêt",
       badgeSubtitle: "Payez seulement si vous aimez",
+    },
+    work: {
+      badge: "Réalisations",
+      title: "Voyez ce que FlashWeb produit réellement",
+      description: "Des sites complets pour de vraies entreprises, construits avant tout engagement. Les deux sont en ligne, bannière d'aperçu comprise.",
+      linkLabel: "Voir le site",
     },
     ourValues: {
       badge: "Nos Valeurs",
@@ -686,27 +606,6 @@ export const translations = {
         },
       ],
     },
-    testimonials: {
-      badge: "Témoignages",
-      title: "Fait confiance par des bâtisseurs qui bougent vite",
-      items: [
-        {
-          quote: "Devra a livré notre plateforme web complète en 5 jours. Ce qui aurait pris des mois à notre équipe était fait avant la prochaine réunion.",
-          author: "Sarah Chen",
-          role: "Fondatrice, TechStart",
-        },
-        {
-          quote: "Le concept FlashWeb m'a convaincu immédiatement. Voir mon site avant de payer? C'est de la confiance dans son métier.",
-          author: "Marcus Rivera",
-          role: "Entrepreneur Local",
-        },
-        {
-          quote: "Enfin une équipe qui bouge aussi vite que nous. La qualité est exceptionnelle et la communication impeccable.",
-          author: "Alex Kim",
-          role: "Partenaire d'Agence",
-        },
-      ],
-    },
     cta: {
       title: "Prêt à livrer à la vitesse de l'aube?",
       description: "Réservez un appel de 15 minutes pour discuter de votre projet. Pas de pitch, pas de pression—juste une conversation ciblée.",
@@ -719,16 +618,11 @@ export const translations = {
       copyright: "Tous droits réservés.",
       product: "Produit",
       company: "Entreprise",
-      legal: "Légal",
       links: {
         flashweb: "FlashWeb",
         howItWorks: "Comment ça marche",
-        pricing: "Tarifs",
         about: "À propos",
-        blog: "Blog",
-        careers: "Carrières",
-        privacy: "Confidentialité",
-        terms: "Conditions",
+        contact: "Contact",
       },
     },
     mobileCta: {
@@ -751,8 +645,6 @@ export const translations = {
       subheadline: "Devra constrói e lança produtos—rápidos, polidos e escaláveis. Do conceito ao cliente, combinamos artesanato com velocidade para você lançar com confiança.",
       ctaPrimary: "Agendar chamada",
       ctaSecondary: "Ver FlashWeb em ação",
-      socialProof: "Confiado por fundadores e operadores que constroem rápido",
-      socialProofItems: ["Startups", "Agências", "Negócios Locais", "Operadores"],
       scroll: "Rolar",
     },
     whatWeBuild: {
@@ -792,9 +684,16 @@ export const translations = {
         "Lançamento em 48 horas ou menos",
       ],
       cta: "Obtenha seu FlashWeb",
+      ctaSecondary: "Ou marque uma chamada de 15 min",
       browserUrl: "seunegocio.com.br",
       badgeTitle: "Construído e Pronto",
       badgeSubtitle: "Pague só se amar",
+    },
+    work: {
+      badge: "Trabalho real",
+      title: "Veja o que o FlashWeb produz mesmo",
+      description: "Sites completos para negócios reais, criados antes de qualquer compromisso. Ambos estão online agora, com banner de pré-visualização incluído.",
+      linkLabel: "Ver o site",
     },
     ourValues: {
       badge: "Nossos Valores",
@@ -827,27 +726,6 @@ export const translations = {
         },
       ],
     },
-    testimonials: {
-      badge: "Depoimentos",
-      title: "Confiado por construtores que se movem rápido",
-      items: [
-        {
-          quote: "Devra entregou toda nossa plataforma web em 5 dias. O que teria levado meses para nossa equipe foi feito antes da próxima reunião.",
-          author: "Sarah Chen",
-          role: "Fundadora, TechStart",
-        },
-        {
-          quote: "O conceito FlashWeb me convenceu imediatamente. Ver meu site antes de pagar? Isso é confiança no próprio ofício.",
-          author: "Marcus Rivera",
-          role: "Empresário Local",
-        },
-        {
-          quote: "Finalmente uma equipe que se move tão rápido quanto nós. A qualidade é excepcional e a comunicação impecável.",
-          author: "Alex Kim",
-          role: "Parceiro de Agência",
-        },
-      ],
-    },
     cta: {
       title: "Pronto para entregar na velocidade do amanhecer?",
       description: "Agende uma chamada de 15 minutos para discutir seu projeto. Sem apresentações, sem pressão—apenas uma conversa focada.",
@@ -860,20 +738,15 @@ export const translations = {
       copyright: "Todos os direitos reservados.",
       product: "Produto",
       company: "Empresa",
-      legal: "Legal",
       links: {
         flashweb: "FlashWeb",
         howItWorks: "Como Funciona",
-        pricing: "Preços",
         about: "Sobre",
-        blog: "Blog",
-        careers: "Carreiras",
-        privacy: "Privacidade",
-        terms: "Termos",
+        contact: "Contacto",
       },
     },
     mobileCta: {
       bookCall: "Agendar chamada",
     },
   },
-} as const
+}

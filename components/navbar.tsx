@@ -37,7 +37,7 @@ export function Navbar() {
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <a href="#" className="flex items-center gap-2.5 group">
+          <a href="/" className="flex items-center gap-2.5 group">
             <DevraLogo className="w-9 h-9 md:w-10 md:h-10 transition-transform group-hover:scale-105" />
             <span className="text-xl md:text-2xl font-bold tracking-tight text-foreground">
               Devra

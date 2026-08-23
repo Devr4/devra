@@ -5,7 +5,7 @@ import { HeroSection } from "@/components/hero-section"
 import { HowItWorksSection } from "@/components/how-it-works-section"
 import { FlashWebSection } from "@/components/flashweb-section"
 import { WhyDevraSection } from "@/components/why-devra-section"
-import { TestimonialsSection } from "@/components/testimonials-section"
+import { WorkSection } from "@/components/work-section"
 import { CTASection } from "@/components/cta-section"
 import { Footer } from "@/components/footer"
 import { MobileCTABar } from "@/components/mobile-cta-bar"
@@ -21,7 +21,7 @@ export default function Home() {
           <HowItWorksSection />
           <FlashWebSection />
           <WhyDevraSection />
-          <TestimonialsSection />
+          <WorkSection />
           <CTASection />
         </main>
         <Footer />

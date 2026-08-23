@@ -4,11 +4,16 @@ import { Button } from "@/components/ui/button"
 import { Check, ArrowRight, Sparkles } from "lucide-react"
 import { useI18n } from "@/lib/i18n/context"
 
+/** The product's own site. This is the destination the section exists to send
+ *  people to, so it is defined once and used by the button, the visible URL and
+ *  the browser mockup alike. */
+const FLASHWEB_URL = "https://flashweb.devra.net"
+
 export function FlashWebSection() {
   const { t } = useI18n()
 
   return (
-    <section id="flashweb" className="relative py-24 md:py-32 overflow-hidden">
+    <section id="flashweb" className="relative py-20 md:py-28 overflow-hidden">
       {/* Background Effects */}
       <div className="absolute inset-0">
         <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-devra-gold/5 rounded-full blur-[150px]" />
@@ -46,22 +51,59 @@ export function FlashWebSection() {
               ))}
             </ul>
 
-            {/* CTA */}
-            <Button
-              size="lg"
-              className="bg-gradient-to-r from-devra-gold to-devra-gold-dark text-background font-semibold hover:opacity-90 transition-all shadow-xl shadow-devra-gold/25 h-14 px-8 text-base group"
-              asChild
-            >
-              <a href="#book-call">
-                {t.flashweb.cta}
-                <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+            {/* CTA
+                This button used to point at #book-call, which meant the whole
+                section described FlashWeb and then funnelled every interested
+                visitor into Devra's own booking form. FlashWeb's site was
+                reachable from nowhere, which is why Search Console reported no
+                referring page for it and why it lost its own brand query to
+                eight unrelated companies called FlashWeb.
+
+                The primary action now leaves for the product. The anchor text
+                carries the brand deliberately: it is the strongest on-page link
+                this domain can give, and "Get Your FlashWeb" beats a bare URL as
+                a relevance signal. Booking survives as the secondary action, so
+                the funnel is redirected rather than removed. */}
+            <div className="flex flex-col sm:flex-row sm:items-center gap-4">
+              <Button
+                size="lg"
+                className="bg-gradient-to-r from-devra-gold to-devra-gold-dark text-background font-semibold hover:opacity-90 transition-all shadow-xl shadow-devra-gold/25 h-14 px-8 text-base group"
+                asChild
+              >
+                <a href={FLASHWEB_URL}>
+                  {t.flashweb.cta}
+                  <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                </a>
+              </Button>
+
+              <a
+                href="#book-call"
+                className="text-sm text-muted-foreground underline underline-offset-4 hover:text-foreground transition-colors"
+              >
+                {t.flashweb.ctaSecondary}
               </a>
-            </Button>
+            </div>
+
+            {/* The bare domain, shown so the destination is legible before the
+                click and so the brand appears as text and not only as a label
+                on a button. */}
+            <p className="mt-4 text-sm">
+              <a
+                href={FLASHWEB_URL}
+                className="font-mono text-muted-foreground hover:text-devra-gold transition-colors"
+              >
+                flashweb.devra.net
+              </a>
+            </p>
           </div>
 
-          {/* Visual */}
+          {/* Visual
+              Previously a wireframe of grey rectangles: an abstract drawing of a
+              website standing in for the flagship product on the one section
+              that sells it. It proved nothing, and the product's whole promise
+              is that the site is real before you pay. This is a complete site built
+              for a real business and running today. */}
           <div className="relative">
-            {/* Browser mockup */}
             <div className="relative bg-card border border-border rounded-2xl overflow-hidden shadow-2xl shadow-devra-purple/10">
               {/* Browser bar */}
               <div className="flex items-center gap-2 px-4 py-3 bg-muted/50 border-b border-border">
@@ -71,49 +113,28 @@ export function FlashWebSection() {
                   <div className="w-3 h-3 rounded-full bg-green-500/60" />
                 </div>
                 <div className="flex-1 mx-4">
-                  <div className="bg-background/50 rounded-md px-3 py-1.5 text-xs text-muted-foreground font-mono">
-                    {t.flashweb.browserUrl}
+                  <div className="bg-background/50 rounded-md px-3 py-1.5 text-xs text-muted-foreground font-mono truncate">
+                    salumeria-alcolica.devra.net
                   </div>
                 </div>
               </div>
 
-              {/* Website preview */}
-              <div className="p-8 bg-gradient-to-br from-background to-muted/20">
-                {/* Hero section preview */}
-                <div className="space-y-6">
-                  <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-lg bg-devra-purple/20" />
-                    <div className="h-4 w-24 bg-muted rounded" />
-                  </div>
-                  <div className="space-y-3">
-                    <div className="h-8 w-3/4 bg-gradient-to-r from-foreground/20 to-foreground/10 rounded" />
-                    <div className="h-8 w-1/2 bg-gradient-to-r from-devra-gold/30 to-devra-gold/10 rounded" />
-                  </div>
-                  <div className="space-y-2">
-                    <div className="h-3 w-full bg-muted/50 rounded" />
-                    <div className="h-3 w-5/6 bg-muted/50 rounded" />
-                    <div className="h-3 w-4/6 bg-muted/50 rounded" />
-                  </div>
-                  <div className="flex gap-3">
-                    <div className="h-10 w-32 bg-devra-gold/30 rounded-lg" />
-                    <div className="h-10 w-28 bg-muted rounded-lg border border-border" />
-                  </div>
-                </div>
-
-                {/* Cards preview */}
-                <div className="grid grid-cols-3 gap-4 mt-8">
-                  {[1, 2, 3].map((i) => (
-                    <div key={i} className="bg-card border border-border rounded-xl p-4 space-y-3">
-                      <div className="w-8 h-8 rounded-lg bg-devra-purple/20" />
-                      <div className="h-3 w-3/4 bg-muted rounded" />
-                      <div className="space-y-1.5">
-                        <div className="h-2 w-full bg-muted/50 rounded" />
-                        <div className="h-2 w-2/3 bg-muted/50 rounded" />
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
+              <a
+                href="https://salumeria-alcolica.devra.net"
+                className="block group"
+                aria-label="Salumeria Alcolica"
+              >
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/work/salumeria-alcolica.jpeg"
+                  alt="Salumeria Alcolica, a complete restaurant site built with FlashWeb"
+                  width={2560}
+                  height={1680}
+                  loading="lazy"
+                  decoding="async"
+                  className="w-full h-auto transition-transform duration-500 group-hover:scale-[1.02]"
+                />
+              </a>
             </div>
 
             {/* Floating badge */}

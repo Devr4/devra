@@ -8,28 +8,25 @@ export function Footer() {
 
   const links = {
     product: [
-      { label: t.footer.links.flashweb, href: "#flashweb" },
+      // The one outbound link in the footer. FlashWeb is a separate site on its
+      // own host, so an on-page anchor here was pointing at a section about the
+      // product rather than at the product.
+      { label: t.footer.links.flashweb, href: "https://flashweb.devra.net" },
       { label: t.footer.links.howItWorks, href: "#what-we-build" },
-      { label: t.footer.links.pricing, href: "#book-call" },
     ],
     company: [
-      { label: t.footer.links.about, href: "#" },
-      { label: t.footer.links.blog, href: "#" },
-      { label: t.footer.links.careers, href: "#" },
-    ],
-    legal: [
-      { label: t.footer.links.privacy, href: "#" },
-      { label: t.footer.links.terms, href: "#" },
+      { label: t.footer.links.about, href: "#our-values" },
+      { label: t.footer.links.contact, href: "#book-call" },
     ],
   }
 
   return (
     <footer className="relative border-t border-border bg-card/50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
-        <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-12">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           {/* Brand */}
           <div className="lg:col-span-2">
-            <a href="#" className="flex items-center gap-2.5 mb-4">
+            <a href="/" className="flex items-center gap-2.5 mb-4">
               <DevraLogo className="w-9 h-9" />
               <span className="text-xl font-bold tracking-tight text-foreground">Devra</span>
             </a>
@@ -67,19 +64,6 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Legal Links */}
-          <div>
-            <h4 className="font-semibold text-foreground mb-4">{t.footer.legal}</h4>
-            <ul className="space-y-3">
-              {links.legal.map((link) => (
-                <li key={link.label}>
-                  <a href={link.href} className="text-muted-foreground hover:text-foreground transition-colors">
-                    {link.label}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
         </div>
       </div>
     </footer>

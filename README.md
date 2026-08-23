@@ -1,30 +1,43 @@
 # Devra landing page
 
-*Automatically synced with your [v0.app](https://v0.app) deployments*
+The marketing site for Devra, served at [www.devra.net](https://www.devra.net).
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/devra/v0-devra)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.app-black?style=for-the-badge)](https://v0.app/chat/OftGlHJOK63)
+Next.js App Router, Tailwind CSS, shadcn/ui. A single page (`app/page.tsx`)
+composed of sections in `components/`, with copy for six languages in
+`lib/i18n/translations.ts`.
 
-## Overview
+```bash
+pnpm install
+pnpm dev     # http://localhost:3000
+pnpm build
+```
 
-This repository will stay in sync with your deployed chats on [v0.app](https://v0.app).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.app](https://v0.app).
+## Copy lives in one file
 
-## Deployment
+Nothing user-visible is hardcoded in a component. Every string is a key in
+`lib/i18n/translations.ts`, which carries `en`, `it`, `de`, `es`, `fr` and `pt`.
+Adding a section means adding its key to all six, and the language switcher
+reads from the same object.
 
-Your project is live at:
+## FlashWeb is a separate site
 
-**[https://vercel.com/devra/v0-devra](https://vercel.com/devra/v0-devra)**
+FlashWeb is Devra's product and lives on its own host at
+[flashweb.devra.net](https://flashweb.devra.net), in the `Devr4/v69` monorepo
+under `apps/landing`. This repository only describes it.
 
-## Build your app
+That distinction matters more than it looks. This page is the only site in the
+world that already talks about FlashWeb, so the links it gives are the product's
+entire inbound authority. `#flashweb` is a section of this page; it is not the
+product. Any link meant to reach FlashWeb has to be an absolute URL to
+`flashweb.devra.net`, or it is a link to ourselves.
 
-Continue building your app on:
+## A note on claims
 
-**[https://v0.app/chat/OftGlHJOK63](https://v0.app/chat/OftGlHJOK63)**
+Sections that assert trust must be backed by something checkable. The
+testimonials section was removed because its three quotes were placeholder names
+that were never replaced, and the hero's "trusted by" row named market segments
+rather than customers. Both shipped to production in six languages.
 
-## How It Works
-
-1. Create and modify your project using [v0.app](https://v0.app)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+`components/work-section.tsx` is the replacement: real client sites, linked, so
+a visitor can verify them. It deliberately excludes the two demonstration sites
+the FlashWeb landing marks as demos rather than client work.
