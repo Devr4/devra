@@ -13,20 +13,21 @@ import { useI18n } from "@/lib/i18n/context"
  * outright in the EU: the Omnibus Directive added point 23c to Annex I of the
  * Unfair Commercial Practices Directive, and AGCM enforces it in Italy.
  *
- * These are the honest version of the same claim: real sites for real
- * businesses, live, and a visitor can click through and check. That is stronger
+ * This is the honest version of the same claim: a real site for a real
+ * business, live, and a visitor can click through and check. That is stronger
  * proof than a quote anyway, because it cannot be invented.
  *
- * Both sites currently serve a "Questo e un sito web di anteprima. Rendilo
- * tuo" banner, so neither is a launched, paid-for client site, whatever the
- * FlashWeb landing's `kind: "client"` label says. The copy is written around
- * that rather than over it: they are complete sites for real businesses, built
- * before the business committed to anything, which is precisely the FlashWeb
- * pitch. Do not relabel them as customers without checking their real status.
+ * The site currently serves a "Questo e un sito web di anteprima. Rendilo tuo"
+ * banner, so it is not a launched, paid-for client site, whatever the FlashWeb
+ * landing's `kind: "client"` label says. The copy is written around that rather
+ * than over it: a complete site for a real business, built before the business
+ * committed to anything, which is precisely the FlashWeb pitch. Do not relabel
+ * it as a customer without checking its real status.
  *
  * The two sites the landing marks `kind: "demo"` (Trattoria da Pino, Grace
  * Coffee Corner) are excluded: those exist to show the product, and showing
- * them here would overstate the work again.
+ * them here would overstate the work again. DeRos Restaurant was removed at
+ * the operator's request.
  */
 const WORKS = [
   {
@@ -34,12 +35,6 @@ const WORKS = [
     detail: "Palermo",
     url: "https://salumeria-alcolica.devra.net",
     image: "/work/salumeria-alcolica.jpeg",
-  },
-  {
-    name: "DeRos Restaurant",
-    detail: "Milano",
-    url: "https://deros-restaurant.devra.net",
-    image: "/work/deros-restaurant.jpeg",
   },
 ]
 
@@ -70,7 +65,7 @@ export function WorkSection() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-6 lg:gap-8">
+        <div className="grid gap-6 lg:gap-8 max-w-3xl">
           {WORKS.map((work) => (
             <a
               key={work.url}

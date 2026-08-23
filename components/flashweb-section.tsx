@@ -77,7 +77,7 @@ export function FlashWebSection() {
               </Button>
 
               <a
-                href="#book-call"
+                href="/#book-call"
                 className="text-sm text-muted-foreground underline underline-offset-4 hover:text-foreground transition-colors"
               >
                 {t.flashweb.ctaSecondary}

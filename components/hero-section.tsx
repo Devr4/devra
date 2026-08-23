@@ -56,7 +56,7 @@ export function HeroSection() {
               className="bg-gradient-to-r from-devra-gold to-devra-gold-dark text-background font-semibold hover:opacity-90 transition-all shadow-xl shadow-devra-gold/25 h-14 px-8 text-base group"
               asChild
             >
-              <a href="#book-call">
+              <a href="/#book-call">
                 {t.hero.ctaPrimary}
                 <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </a>
@@ -67,7 +67,7 @@ export function HeroSection() {
               className="border-border text-foreground hover:bg-muted h-14 px-8 text-base group bg-transparent"
               asChild
             >
-              <a href="#flashweb">
+              <a href="/#flashweb">
                 <Play className="mr-2 w-5 h-5 text-devra-gold group-hover:scale-110 transition-transform" />
                 {t.hero.ctaSecondary}
               </a>
