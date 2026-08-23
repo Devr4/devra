@@ -88,7 +88,7 @@ export const translations = {
     work: {
       badge: "Real work",
       title: "See what FlashWeb actually produces",
-      description: "Complete sites for real businesses, built before they committed to anything. Both are live right now, preview banner and all.",
+      description: "A complete site for a real business, built before they committed to anything. It is live right now, preview banner and all.",
       linkLabel: "Visit the site",
     },
     // Our Values
@@ -137,14 +137,59 @@ export const translations = {
       copyright: "All rights reserved.",
       product: "Product",
       company: "Company",
+      legal: "Legal",
       links: {
         flashweb: "FlashWeb",
         howItWorks: "How It Works",
         about: "About",
         contact: "Contact",
+        privacy: "Privacy",
       },
     },
     // Mobile CTA
+    privacy: {
+      badge: "Legal",
+      title: "Privacy notice",
+      updated: "Last updated",
+      back: "Back to home",
+      sections: [
+        {
+          heading: "Who we are",
+          body: "Devra runs this website. For anything in this notice, or about your data, write to hello@devra.io.",
+          items: [],
+        },
+        {
+          heading: "What this site collects",
+          body: "Very little, and none of it by asking you:",
+          items: ["Nothing you type. This site has no forms, no sign-up and no account.", "Aggregate visit statistics through Vercel Web Analytics. It sets no cookies and does not follow you to other websites.", "One entry in your browser's local storage, devra-locale, remembering the language you chose. It stays on your device and never reaches us.", "Ordinary server logs kept by our host, including IP address, for security and reliability."],
+        },
+        {
+          heading: "Third parties that see something",
+          body: "Loading or using this page involves three others:",
+          items: ["Vercel hosts the site and processes server logs and analytics for us.", "flagcdn.com serves the flag images in the language switcher, so it receives your IP address when the page loads.", "cal.com handles bookings. If you book a call you leave this site, and their privacy notice applies from that point."],
+        },
+        {
+          heading: "Why we are allowed to",
+          body: "Our legitimate interest in running a secure website and understanding, in aggregate, how it is used. We do not profile you, we do not build advertising audiences, and we do not sell data.",
+          items: [],
+        },
+        {
+          heading: "How long we keep it",
+          body: "We keep no database of visitors. Analytics are aggregated and retained by Vercel under their own policy, and server logs are short-lived.",
+          items: [],
+        },
+        {
+          heading: "Your rights",
+          body: "Under the GDPR you can ask us to give you a copy of your data, correct it, delete it, restrict how we use it, or hand it to someone else, and you can object to us using it at all. Write to hello@devra.io. You can also complain to a supervisory authority; in Italy that is the Garante per la protezione dei dati personali.",
+          items: [],
+        },
+        {
+          heading: "Changes",
+          body: "If this notice changes, the date above changes with it.",
+          items: [],
+        },
+      ],
+    },
     mobileCta: {
       bookCall: "Book a 15-min call",
     },
@@ -212,7 +257,7 @@ export const translations = {
     work: {
       badge: "Lavori reali",
       title: "Guarda cosa produce davvero FlashWeb",
-      description: "Siti completi per attività reali, realizzati prima di qualsiasi impegno. Entrambi sono online adesso, banner di anteprima incluso.",
+      description: "Un sito completo per un'attività reale, realizzato prima di qualsiasi impegno. È online adesso, banner di anteprima incluso.",
       linkLabel: "Vai al sito",
     },
     ourValues: {
@@ -258,12 +303,57 @@ export const translations = {
       copyright: "Tutti i diritti riservati.",
       product: "Prodotto",
       company: "Azienda",
+      legal: "Note legali",
       links: {
         flashweb: "FlashWeb",
         howItWorks: "Come Funziona",
         about: "Chi Siamo",
         contact: "Contatti",
+        privacy: "Privacy",
       },
+    },
+    privacy: {
+      badge: "Note legali",
+      title: "Informativa privacy",
+      updated: "Ultimo aggiornamento",
+      back: "Torna alla home",
+      sections: [
+        {
+          heading: "Chi siamo",
+          body: "Devra gestisce questo sito. Per qualsiasi cosa riguardi questa informativa o i tuoi dati, scrivi a hello@devra.io.",
+          items: [],
+        },
+        {
+          heading: "Cosa raccoglie questo sito",
+          body: "Molto poco, e niente che ti venga chiesto:",
+          items: ["Niente di ciò che scrivi. Questo sito non ha moduli, né registrazione, né account.", "Statistiche di visita aggregate tramite Vercel Web Analytics. Non usa cookie e non ti segue su altri siti.", "Una voce nella memoria locale del browser, devra-locale, che ricorda la lingua scelta. Resta sul tuo dispositivo e non arriva mai a noi.", "I normali log del server tenuti dal nostro host, indirizzo IP incluso, per sicurezza e affidabilità."],
+        },
+        {
+          heading: "Terze parti che vedono qualcosa",
+          body: "Aprire o usare questa pagina coinvolge altri tre soggetti:",
+          items: ["Vercel ospita il sito e tratta per noi log e statistiche.", "flagcdn.com fornisce le bandiere del selettore di lingua e riceve quindi il tuo indirizzo IP al caricamento della pagina.", "cal.com gestisce le prenotazioni. Se prenoti una call esci da questo sito e da lì vale la loro informativa."],
+        },
+        {
+          heading: "Su quale base",
+          body: "Il nostro legittimo interesse a gestire un sito sicuro e a capire, in forma aggregata, come viene usato. Non ti profiliamo, non costruiamo pubblici pubblicitari e non vendiamo dati.",
+          items: [],
+        },
+        {
+          heading: "Per quanto tempo",
+          body: "Non teniamo alcun archivio dei visitatori. Le statistiche sono aggregate e conservate da Vercel secondo la loro policy, e i log del server hanno vita breve.",
+          items: [],
+        },
+        {
+          heading: "I tuoi diritti",
+          body: "Ai sensi del GDPR puoi chiederci una copia dei tuoi dati, la loro correzione o cancellazione, la limitazione del trattamento o la portabilità, e puoi opporti al trattamento. Scrivi a hello@devra.io. Puoi anche rivolgerti a un'autorità di controllo: in Italia è il Garante per la protezione dei dati personali.",
+          items: [],
+        },
+        {
+          heading: "Modifiche",
+          body: "Se questa informativa cambia, cambia con essa la data qui sopra.",
+          items: [],
+        },
+      ],
     },
     mobileCta: {
       bookCall: "Prenota una chiamata",
@@ -332,7 +422,7 @@ export const translations = {
     work: {
       badge: "Echte Projekte",
       title: "So sieht FlashWeb in der Praxis aus",
-      description: "Vollständige Websites für echte Unternehmen, gebaut bevor sie sich festgelegt haben. Beide sind jetzt online, inklusive Vorschau-Banner.",
+      description: "Eine vollständige Website für ein echtes Unternehmen, gebaut bevor es sich festgelegt hat. Sie ist jetzt online, inklusive Vorschau-Banner.",
       linkLabel: "Website ansehen",
     },
     ourValues: {
@@ -378,12 +468,57 @@ export const translations = {
       copyright: "Alle Rechte vorbehalten.",
       product: "Produkt",
       company: "Unternehmen",
+      legal: "Rechtliches",
       links: {
         flashweb: "FlashWeb",
         howItWorks: "So funktioniert's",
         about: "Über uns",
         contact: "Kontakt",
+        privacy: "Datenschutz",
       },
+    },
+    privacy: {
+      badge: "Rechtliches",
+      title: "Datenschutzhinweis",
+      updated: "Zuletzt aktualisiert",
+      back: "Zurück zur Startseite",
+      sections: [
+        {
+          heading: "Wer wir sind",
+          body: "Devra betreibt diese Website. Bei Fragen zu diesem Hinweis oder zu Ihren Daten schreiben Sie an hello@devra.io.",
+          items: [],
+        },
+        {
+          heading: "Was diese Website erhebt",
+          body: "Sehr wenig, und nichts davon durch Nachfragen:",
+          items: ["Nichts, was Sie eingeben. Diese Website hat keine Formulare, keine Anmeldung und kein Konto.", "Aggregierte Besuchsstatistiken über Vercel Web Analytics. Es setzt keine Cookies und verfolgt Sie nicht auf andere Websites.", "Einen Eintrag im lokalen Speicher Ihres Browsers, devra-locale, der Ihre Sprachwahl merkt. Er bleibt auf Ihrem Gerät und erreicht uns nie.", "Gewöhnliche Server-Logs unseres Hosters, einschließlich IP-Adresse, für Sicherheit und Zuverlässigkeit."],
+        },
+        {
+          heading: "Dritte, die etwas sehen",
+          body: "Das Laden dieser Seite betrifft drei weitere Parteien:",
+          items: ["Vercel hostet die Website und verarbeitet Logs und Statistiken für uns.", "flagcdn.com liefert die Flaggenbilder der Sprachauswahl und erhält dabei Ihre IP-Adresse.", "cal.com wickelt Terminbuchungen ab. Wenn Sie einen Termin buchen, verlassen Sie diese Website und es gilt deren Datenschutzhinweis."],
+        },
+        {
+          heading: "Auf welcher Grundlage",
+          body: "Unser berechtigtes Interesse, eine sichere Website zu betreiben und aggregiert zu verstehen, wie sie genutzt wird. Wir erstellen keine Profile, bauen keine Werbezielgruppen und verkaufen keine Daten.",
+          items: [],
+        },
+        {
+          heading: "Wie lange",
+          body: "Wir führen keine Besucherdatenbank. Statistiken werden aggregiert und von Vercel nach deren Richtlinie aufbewahrt, Server-Logs sind kurzlebig.",
+          items: [],
+        },
+        {
+          heading: "Ihre Rechte",
+          body: "Nach der DSGVO können Sie Auskunft, Berichtigung, Löschung, Einschränkung oder Übertragung Ihrer Daten verlangen und der Verarbeitung widersprechen. Schreiben Sie an hello@devra.io. Sie können sich auch bei einer Aufsichtsbehörde beschweren.",
+          items: [],
+        },
+        {
+          heading: "Änderungen",
+          body: "Ändert sich dieser Hinweis, ändert sich das Datum oben mit.",
+          items: [],
+        },
+      ],
     },
     mobileCta: {
       bookCall: "Gespräch buchen",
@@ -452,7 +587,7 @@ export const translations = {
     work: {
       badge: "Trabajo real",
       title: "Mira lo que produce FlashWeb de verdad",
-      description: "Sitios completos para negocios reales, creados antes de cualquier compromiso. Ambos están en línea ahora, con banner de vista previa incluido.",
+      description: "Un sitio completo para un negocio real, creado antes de cualquier compromiso. Está en línea ahora, con banner de vista previa incluido.",
       linkLabel: "Ver el sitio",
     },
     ourValues: {
@@ -498,12 +633,57 @@ export const translations = {
       copyright: "Todos los derechos reservados.",
       product: "Producto",
       company: "Empresa",
+      legal: "Legal",
       links: {
         flashweb: "FlashWeb",
         howItWorks: "Cómo Funciona",
         about: "Nosotros",
         contact: "Contacto",
+        privacy: "Privacidad",
       },
+    },
+    privacy: {
+      badge: "Legal",
+      title: "Aviso de privacidad",
+      updated: "Última actualización",
+      back: "Volver al inicio",
+      sections: [
+        {
+          heading: "Quiénes somos",
+          body: "Devra gestiona este sitio web. Para cualquier cosa relacionada con este aviso o con tus datos, escribe a hello@devra.io.",
+          items: [],
+        },
+        {
+          heading: "Qué recoge este sitio",
+          body: "Muy poco, y nada preguntándotelo:",
+          items: ["Nada de lo que escribas. Este sitio no tiene formularios, ni registro, ni cuenta.", "Estadísticas de visita agregadas mediante Vercel Web Analytics. No usa cookies ni te sigue a otros sitios.", "Una entrada en el almacenamiento local de tu navegador, devra-locale, que recuerda el idioma elegido. Se queda en tu dispositivo y nunca llega hasta nosotros.", "Registros de servidor normales de nuestro proveedor, incluida la dirección IP, por seguridad y fiabilidad."],
+        },
+        {
+          heading: "Terceros que ven algo",
+          body: "Cargar o usar esta página implica a otros tres:",
+          items: ["Vercel aloja el sitio y trata los registros y las estadísticas por nosotros.", "flagcdn.com sirve las banderas del selector de idioma, por lo que recibe tu dirección IP al cargar la página.", "cal.com gestiona las reservas. Si reservas una llamada sales de este sitio y desde ahí se aplica su aviso de privacidad."],
+        },
+        {
+          heading: "Con qué base",
+          body: "Nuestro interés legítimo en mantener un sitio seguro y entender, de forma agregada, cómo se usa. No te perfilamos, no creamos audiencias publicitarias y no vendemos datos.",
+          items: [],
+        },
+        {
+          heading: "Cuánto tiempo",
+          body: "No mantenemos ninguna base de datos de visitantes. Las estadísticas son agregadas y las conserva Vercel según su política, y los registros del servidor duran poco.",
+          items: [],
+        },
+        {
+          heading: "Tus derechos",
+          body: "Según el RGPD puedes pedirnos una copia de tus datos, su corrección o supresión, la limitación del tratamiento o su portabilidad, y puedes oponerte al tratamiento. Escribe a hello@devra.io. También puedes reclamar ante una autoridad de control.",
+          items: [],
+        },
+        {
+          heading: "Cambios",
+          body: "Si este aviso cambia, la fecha de arriba cambia con él.",
+          items: [],
+        },
+      ],
     },
     mobileCta: {
       bookCall: "Reservar llamada",
@@ -572,7 +752,7 @@ export const translations = {
     work: {
       badge: "Réalisations",
       title: "Voyez ce que FlashWeb produit réellement",
-      description: "Des sites complets pour de vraies entreprises, construits avant tout engagement. Les deux sont en ligne, bannière d'aperçu comprise.",
+      description: "Un site complet pour une vraie entreprise, construit avant tout engagement. Il est en ligne, bannière d'aperçu comprise.",
       linkLabel: "Voir le site",
     },
     ourValues: {
@@ -618,12 +798,57 @@ export const translations = {
       copyright: "Tous droits réservés.",
       product: "Produit",
       company: "Entreprise",
+      legal: "Mentions légales",
       links: {
         flashweb: "FlashWeb",
         howItWorks: "Comment ça marche",
         about: "À propos",
         contact: "Contact",
+        privacy: "Confidentialité",
       },
+    },
+    privacy: {
+      badge: "Mentions légales",
+      title: "Politique de confidentialité",
+      updated: "Dernière mise à jour",
+      back: "Retour à l'accueil",
+      sections: [
+        {
+          heading: "Qui nous sommes",
+          body: "Devra exploite ce site. Pour toute question sur cette politique ou sur vos données, écrivez à hello@devra.io.",
+          items: [],
+        },
+        {
+          heading: "Ce que ce site collecte",
+          body: "Très peu, et rien en vous le demandant :",
+          items: ["Rien de ce que vous saisissez. Ce site n'a ni formulaire, ni inscription, ni compte.", "Des statistiques de visite agrégées via Vercel Web Analytics. Aucun cookie, et aucun suivi vers d'autres sites.", "Une entrée dans le stockage local de votre navigateur, devra-locale, qui retient la langue choisie. Elle reste sur votre appareil et ne nous parvient jamais.", "Les journaux serveur habituels de notre hébergeur, adresse IP comprise, pour la sécurité et la fiabilité."],
+        },
+        {
+          heading: "Les tiers qui voient quelque chose",
+          body: "Charger cette page fait intervenir trois autres acteurs :",
+          items: ["Vercel héberge le site et traite pour nous les journaux et les statistiques.", "flagcdn.com fournit les drapeaux du sélecteur de langue et reçoit donc votre adresse IP au chargement.", "cal.com gère les rendez-vous. Si vous réservez un appel, vous quittez ce site et leur politique s'applique."],
+        },
+        {
+          heading: "Sur quelle base",
+          body: "Notre intérêt légitime à exploiter un site sécurisé et à comprendre, de façon agrégée, son utilisation. Nous ne vous profilons pas, ne constituons pas d'audiences publicitaires et ne vendons pas de données.",
+          items: [],
+        },
+        {
+          heading: "Combien de temps",
+          body: "Nous ne tenons aucune base de visiteurs. Les statistiques sont agrégées et conservées par Vercel selon leur politique, et les journaux serveur sont de courte durée.",
+          items: [],
+        },
+        {
+          heading: "Vos droits",
+          body: "Le RGPD vous permet de demander l'accès à vos données, leur rectification, leur effacement, la limitation du traitement ou leur portabilité, et de vous opposer au traitement. Écrivez à hello@devra.io. Vous pouvez aussi saisir une autorité de contrôle.",
+          items: [],
+        },
+        {
+          heading: "Modifications",
+          body: "Si cette politique change, la date ci-dessus change avec elle.",
+          items: [],
+        },
+      ],
     },
     mobileCta: {
       bookCall: "Réserver un appel",
@@ -692,7 +917,7 @@ export const translations = {
     work: {
       badge: "Trabalho real",
       title: "Veja o que o FlashWeb produz mesmo",
-      description: "Sites completos para negócios reais, criados antes de qualquer compromisso. Ambos estão online agora, com banner de pré-visualização incluído.",
+      description: "Um site completo para um negócio real, criado antes de qualquer compromisso. Está online agora, com banner de pré-visualização incluído.",
       linkLabel: "Ver o site",
     },
     ourValues: {
@@ -738,12 +963,57 @@ export const translations = {
       copyright: "Todos os direitos reservados.",
       product: "Produto",
       company: "Empresa",
+      legal: "Legal",
       links: {
         flashweb: "FlashWeb",
         howItWorks: "Como Funciona",
         about: "Sobre",
         contact: "Contacto",
+        privacy: "Privacidade",
       },
+    },
+    privacy: {
+      badge: "Legal",
+      title: "Aviso de privacidade",
+      updated: "Última atualização",
+      back: "Voltar ao início",
+      sections: [
+        {
+          heading: "Quem somos",
+          body: "A Devra gere este site. Para qualquer questão sobre este aviso ou sobre os seus dados, escreva para hello@devra.io.",
+          items: [],
+        },
+        {
+          heading: "O que este site recolhe",
+          body: "Muito pouco, e nada perguntando-lhe:",
+          items: ["Nada do que escrever. Este site não tem formulários, nem registo, nem conta.", "Estatísticas de visita agregadas através do Vercel Web Analytics. Não usa cookies nem o segue para outros sites.", "Uma entrada no armazenamento local do navegador, devra-locale, que guarda o idioma escolhido. Fica no seu dispositivo e nunca chega até nós.", "Registos de servidor normais do nosso alojamento, incluindo o endereço IP, por segurança e fiabilidade."],
+        },
+        {
+          heading: "Terceiros que veem alguma coisa",
+          body: "Carregar esta página envolve outros três:",
+          items: ["A Vercel aloja o site e trata dos registos e das estatísticas por nós.", "O flagcdn.com fornece as bandeiras do seletor de idioma, pelo que recebe o seu endereço IP ao carregar a página.", "O cal.com trata das marcações. Se marcar uma chamada sai deste site e passa a valer o aviso deles."],
+        },
+        {
+          heading: "Com que base",
+          body: "O nosso interesse legítimo em manter um site seguro e perceber, de forma agregada, como é usado. Não fazemos perfis, não criamos audiências publicitárias e não vendemos dados.",
+          items: [],
+        },
+        {
+          heading: "Durante quanto tempo",
+          body: "Não mantemos qualquer base de dados de visitantes. As estatísticas são agregadas e conservadas pela Vercel segundo a política deles, e os registos de servidor duram pouco.",
+          items: [],
+        },
+        {
+          heading: "Os seus direitos",
+          body: "Ao abrigo do RGPD pode pedir-nos uma cópia dos seus dados, a sua correção ou apagamento, a limitação do tratamento ou a portabilidade, e pode opor-se ao tratamento. Escreva para hello@devra.io. Pode também apresentar queixa a uma autoridade de controlo.",
+          items: [],
+        },
+        {
+          heading: "Alterações",
+          body: "Se este aviso mudar, a data acima muda com ele.",
+          items: [],
+        },
+      ],
     },
     mobileCta: {
       bookCall: "Agendar chamada",
